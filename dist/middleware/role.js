@@ -1,7 +1,7 @@
+"use strict";
 // import { NextFunction, Request, Response } from "express"
 // import { UserRole } from "../models/userModel"
 // import { AuthRequest } from "./auth"
-
 // // Middleware to restrict route access based on user roles.
 // export const requireRole = (roles: UserRole[]) => {
 //   return (req: AuthRequest, res: Response, next: NextFunction) => {

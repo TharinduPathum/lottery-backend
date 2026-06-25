@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const ticketController_1 = require("../controllers/ticketController");
+const router = (0, express_1.Router)();
+router.post("/generate", ticketController_1.generateTickets);
+router.get("/available", ticketController_1.getAvailableTickets);
+router.post("/buy", ticketController_1.buyTicket);
+router.get("/my-tickets", ticketController_1.getMyTickets);
+router.post("/draw", ticketController_1.drawLottery);
+router.get("/draw-results", ticketController_1.getPastDrawResults);
+exports.default = router;
